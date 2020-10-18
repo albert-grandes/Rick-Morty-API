@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="  crossorigin="anonymous"></script>
+    <script src="script/app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <p class="header__title">Rick&Morty API</p>
+        <div class="header__nav">
+            <span id="episodes"> Episodes </span>
+            <span id="character"> Characters </span>
+            <span id="locations"> Locations </span></div>
+    </header>
+    <main class="main">
+        <nav class="main__nav">
+            <div class="main__nav__list" id="episodesList"></div>
+            <div class="main__nav__button" id="paginationList">
+                <div></div>
+                <!--Buttons of the page-->
+            </div>
+        </nav>
+        <section class="main__section">
+            <div class="main__section__container">
+                <div class="main__section__header">
+                    <img id="idSectionHeaderImage" class="">
+                    <div>
+                        <h2 id="idSectionHeaderTitle"></h2>
+                        <p id="idSectionHeaderSubtitle"></p>
+                    </div>
+                </div>
+                <hr class="main__section__hr">
+                <div class="main__section__body" id="idSectionBody">
+                </div>
+                <div class="main__section__footer" id="idSectionFooter">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
