@@ -27,18 +27,21 @@ $(document).ready(function () {
     $(this).addClass("active")
     resetPanel()
     showSidePanel('https://rickandmortyapi.com/api/episode', 'episode')
+    welcomeImage()
   })
   $("#character").click(function() {
     $(".header__nav").children().removeClass("active")
     $(this).addClass("active")
     resetPanel()
     showSidePanel('https://rickandmortyapi.com/api/character', 'character')
+    welcomeImage()
   })
   $("#locations").click(function() {
     $(".header__nav").children().removeClass("active")
     $(this).addClass("active")
     resetPanel()
     showSidePanel('https://rickandmortyapi.com/api/location', 'location')
+    welcomeImage()
   })
 })
 //E> 2. Automatic run
@@ -253,6 +256,16 @@ function resetPanel() {
   $('#idSectionHeaderTitle').empty()
   $('#idSectionHeaderSubtitle').empty()
   $('#idSectionBody').empty()
+}
+//E> 8. Panel Reset
+/************************************************************************************************/
+
+/************************************************************************************************/
+//S> 8. Panel Reset
+function welcomeImage() {
+  $('#idSectionBody').append(
+    $('<img>', {class: 'welcome', src: 'asset/welcome.png'})
+  )
 }
 //E> 8. Panel Reset
 /************************************************************************************************/
